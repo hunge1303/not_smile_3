@@ -889,15 +889,15 @@
   const heroes = [
     {
       heroName:  "Hero One",
-      realName:  "Friend 1",
+      realName:  "hunge",
       exclaim:   "EXCELSIOR!",
-      message:   "Write a personalized birthday message for Friend 1 here.\nMake it funny, heartfelt, or both!",
+      message:   "Happy birthday yins.\n\nWelp another year has passed, and that makes 4 in total. This year’s a bit special huh, tổng cộng khoảng cách địa lý giữa mỗi đứa trong nhóm cộng lại chắc phải gần nửa vòng trái đất… năm đầu tiên mà việc tặng quà trở nên khó đến vậy, năm đầu tiên mà cách duy nhất để thấy được mặt nhau vào mỗi bữa tiệc sinh nhật là qua cái màn hình laptop, năm đầu tiên mà bọn mình không ở chung một cái lớp học nữa. But that does not make it any less meaningful, chỉ thế th thì ko thể make our friendship any less close and strong. So we dedicate these little messages, gifts, and time for you, hopefully giving you a happy birthday from halfway across the globe. I can’t possibly thank you enough for being one of my most important friends. I truly wish that next year, the year after, and the year after that, and years and years to come, we’d still be able to say happy birthday to each other like this. Anyhow, wish you a happi birthday yins.",
       color:     "#ec1d24",
       tradImgSrc: "heros/hunge_vietphuc.jpg" // <-- ADD TRADITIONAL IMAGE PATH HERE
     },
     {
       heroName:  "Hero Two",
-      realName:  "Friend 2",
+      realName:  "OKLa",
       exclaim:   "TRUE BELIEVER!",
       message:   "Write a personalized birthday message for Friend 2 here.",
       color:     "#00aaff",
@@ -905,7 +905,7 @@
     },
     {
       heroName:  "Hero Three",
-      realName:  "Friend 3",
+      realName:  "ltb",
       exclaim:   "NUFF SAID!",
       message:   "Write a personalized birthday message for Friend 3 here.",
       color:     "#f5c518",
@@ -913,15 +913,15 @@
     },
     {
       heroName:  "Hero Four",
-      realName:  "Friend 4",
+      realName:  "Mai",
       exclaim:   "FACE FRONT!",
-      message:   "Write a personalized birthday message for Friend 4 here.",
+      message:   "my little ray of sunshine,\n\nlại 1 năm nữa trôi qua, bbi đã lớn thêm 1 tuổi. người khác thì không biết thế nào, chứ trong mắt t thì yến vẫn như thế kkk. kiểu trẻ mãi không già í. năng lượng của yins vẫn luôn cho mọi người cảm giác tươi mới, đáng iu. từ cách bbi quan tâm và luôn chỉn chu trong việc đối xử với những người thân yêu, cho đến cách xem cả mấy season phim và sẵn sàng ngồi mấy tiếng để kể cho cả nhóm nghe=)))) đáng yêu lắm đấy có biết không hả!! \n\nvẫn như thường lệ, chúc em bé của tui tuổi mới thật rực rỡ, trải nghiệm thật nhiều điều thú vị, giữ mãi được sự lạc quan và tự tin vào bản thân. quan trọng nhất là mau về vn để tui ôm một cái chứ nhớ quá rồi!!",
       color:     "#00e0a0",
       tradImgSrc: "heros/mai_vietphuc.jpg"
     },
     {
       heroName:  "Hero Five",
-      realName:  "Friend 5",
+      realName:  "Kat",
       exclaim:   "MAKE MINE MARVEL!",
       message:   "Write a personalized birthday message for Friend 5 here.",
       color:     "#ff88ff",
@@ -940,12 +940,12 @@
      Supported formats: mp3, ogg, wav
   ───────────────────────────────────────── */
   const tracks = {
-    main:   new Audio(''),   // ← main.mp3
-    hero0:  new Audio(''),   // ← hero1.mp3
+    main:   new Audio('music/7UPPERCUTS - YÊU (OFFICIAL MUSIC VIDEO) [XHZ3kKlpCWw].mp3'),   // ← main.mp3
+    hero0:  new Audio('music/True Kinda Love (feat. Estelle.mp3'),   // ← hero1.mp3
     hero1:  new Audio(''),   // ← hero2.mp3
-    hero2:  new Audio(''),   // ← hero3.mp3
-    hero3:  new Audio(''),   // ← hero4.mp3
-    hero4:  new Audio(''),   // ← hero5.mp3
+    hero2:  new Audio('music/Loser, Baby Sing-Along Hazbin Hotel Prime Video(mp3j.cc).mp3'),   // ← hero3.mp3
+    hero3:  new Audio('music/Corinne Bailey Rae - Put Your Records On(mp3j.cc).mp3'),   // ← hero4.mp3
+    hero4:  new Audio('music/Stephen Sanchez - Until I Found You (Official Video)(mp3j.cc).mp3'),   // ← hero5.mp3
   };
 
   // Loop all tracks
@@ -957,7 +957,7 @@
   let currentTrack   = null;
   const FADE_STEPS   = 40;
   const FADE_INTERVAL = 30;  // ms per step → ~1.2s total fade
-  const MAX_VOL      = 0.6;
+  const MAX_VOL      = 0.4;
 
   function fadeIn(track, onDone) {
     if (!track.src || track.src === window.location.href) return; // no file set
